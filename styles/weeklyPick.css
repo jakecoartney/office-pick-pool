@@ -1,0 +1,141 @@
+body{
+  background-color: #EDEDED;
+}
+.title{
+  text-align: right;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user{
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #9d9d9d;
+}
+
+#weeks, #weeks a, #weekButtons button{
+  background-color: rgb(51, 51, 51);
+  color: rgb(157, 157, 157);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#weeks a:hover, #weekButtons button:hover, button:active{
+  color: rgb(255, 255, 255);
+  background-color: #080808;
+}
+
+.weekGame, .weekPick, .weekScore, .weekManagement, .overallScore{
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  padding: 0px;
+  background-color: white;
+}
+
+.gameNumber, .playerName{
+  padding: 6px 12px;
+  font-size: 16px;
+  background-color: rgb(51, 51, 51);
+  color: rgb(157, 157, 157);
+  text-align: center;
+  font-weight: bold;
+}
+
+.gameTeam1{
+  padding: 6px 12px;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+a .gameTeam1{
+  color: black !important;
+}
+
+a .gameTeam1:hover{
+  background-color: gray !important;
+  color: white !important;
+}
+
+.gameTeam2{
+  padding: 6px 12px;
+  font-size: 16px;
+  text-align: right;
+  font-weight: bold;
+}
+
+a .gameTeam2{
+  color: black !important;
+}
+
+a .gameTeam2:hover{
+  background-color: gray !important;
+  color: white !important;
+}
+
+a .activePick, .activePick{
+ background-color: gray !important;
+ color: white !important;
+}
+
+.gameScore1{
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+.gameScore2{
+  float: left;
+  text-align: left;
+  font-weight: bold;
+}
+
+.totalScore{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.goodPick{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.badPick{
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.mehPick{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* font awesome icon styles */
+.fa-lock{
+  color: rgb(157, 157, 157);
+}
+
+.fa-unlock{
+  color: green;
+}
