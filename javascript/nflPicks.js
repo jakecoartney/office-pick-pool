@@ -1,23 +1,11 @@
-//Defined players
-var pnDamen = {email:null,name:"Damen Christensen",code:"damen",admin:0};
-var pnJake = {email:null,name:"Jake Coartney",code:"jake",admin:1};
-var pnKevin = {email:null,name:"Kevin Rich",code:"kevin",admin:0};
-var pnOlsen = {email:null,name:"Robert Olsen",code:"olsen",admin:0};
-var pnLemoine = {email:null,name:"Robert LeMoine",code:"lemoine",admin:0};;
-var pnRyan = {email:null,name:"Ryan Fristoe",code:"ryan",admin:0};
-var pnDice = {email:null,name:"Random Dice Roll",code:"dice",admin:0};
-
-//Array of players
-var players = [pnDamen,pnJake,pnKevin,pnOlsen,pnLemoine,pnRyan,pnDice];
-
 var nfl2016Wk1Picks = [
-  {player:pnDamen,pick1:null,pick2:null,pick3:null,pick4:null,pick5:null,pick6:null,pick7:null,pick8:null,pick9:null,pick10:null,pick11:null,pick12:null,pick13:null,pick14:null,pick15:null,pick16:null},
-  {player:pnJake,pick1:null,pick2:null,pick3:null,pick4:null,pick5:null,pick6:null,pick7:null,pick8:null,pick9:null,pick10:null,pick11:null,pick12:null,pick13:null,pick14:null,pick15:null,pick16:null},
-  {player:pnKevin,pick1:null,pick2:null,pick3:null,pick4:null,pick5:null,pick6:null,pick7:null,pick8:null,pick9:null,pick10:null,pick11:null,pick12:null,pick13:null,pick14:null,pick15:null,pick16:null},
-  {player:pnOlsen,pick1:null,pick2:null,pick3:null,pick4:null,pick5:null,pick6:null,pick7:null,pick8:null,pick9:null,pick10:null,pick11:null,pick12:null,pick13:null,pick14:null,pick15:null,pick16:null},
-  {player:pnLemoine,pick1:null,pick2:null,pick3:null,pick4:null,pick5:null,pick6:null,pick7:null,pick8:null,pick9:null,pick10:null,pick11:null,pick12:null,pick13:null,pick14:null,pick15:null,pick16:null},
-  {player:pnRyan,pick1:null,pick2:null,pick3:null,pick4:null,pick5:null,pick6:null,pick7:null,pick8:null,pick9:null,pick10:null,pick11:null,pick12:null,pick13:null,pick14:null,pick15:null,pick16:null},
-  {player:pnDice,pick1:null,pick2:null,pick3:null,pick4:null,pick5:null,pick6:null,pick7:null,pick8:null,pick9:null,pick10:null,pick11:null,pick12:null,pick13:null,pick14:null,pick15:null,pick16:null}
+  {player:pnDamen,pick1:nflPanthers,pick2:nflVikings,pick3:nflTexans,pick4:nflEagles,pick5:nflBills,pick6:nflChiefs,pick7:nflRaiders,pick8:nflBuccaneers,pick9:nflBengals,pick10:nflPackers,pick11:nflSeahawks,pick12:nflGiants,pick13:nflLions,pick14:nflCardinals,pick15:nflSteelers,pick16:nflRams},
+  {player:pnJake,pick1:nflPanthers,pick2:nflTitans,pick3:nflTexans,pick4:nflEagles,pick5:nflBills,pick6:nflChiefs,pick7:nflRaiders,pick8:nflFalcons,pick9:nflBengals,pick10:nflPackers,pick11:nflSeahawks,pick12:nflGiants,pick13:nflLions,pick14:nflCardinals,pick15:nflSteelers,pick16:nflRams},
+  {player:pnKevin,pick1:nflPanthers,pick2:nflVikings,pick3:nflTexans,pick4:nflEagles,pick5:nflBills,pick6:nflChargers,pick7:nflRaiders,pick8:nflFalcons,pick9:nflBengals,pick10:nflPackers,pick11:nflSeahawks,pick12:nflGiants,pick13:nflLions,pick14:nflPatriots,pick15:nflSteelers,pick16:nflRams},
+  {player:pnOlsen,pick1:nflPanthers,pick2:nflTitans,pick3:nflTexans,pick4:nflBrowns,pick5:nflBills,pick6:nflChiefs,pick7:nflRaiders,pick8:nflFalcons,pick9:nflBengals,pick10:nflPackers,pick11:nflSeahawks,pick12:nflGiants,pick13:nflColts,pick14:nflCardinals,pick15:nflSteelers,pick16:nflRams},
+  {player:pnLemoine,pick1:nflPanthers,pick2:nflFalcons,pick3:nflRavens,pick4:nflTexans,pick5:nflPackers,pick6:nflChiefs,pick7:nflRaiders,pick8:nflBengals,pick9:nflEagles,pick10:nflTitans,pick11:nflSeahawks,pick12:nflGiants,pick13:nflColts,pick14:nflCardinals,pick15:nflSteelers,pick16:nflRams},
+  {player:pnRyan,pick1:nflPanthers,pick2:nflFalcons,pick3:nflRavens,pick4:nflTexans,pick5:nflPackers,pick6:nflChargers,pick7:nflRaiders,pick8:nflBengals,pick9:nflEagles,pick10:nflTitans,pick11:nflSeahawks,pick12:nflGiants,pick13:nflColts,pick14:nflPatriots,pick15:nflSteelers,pick16:nflRams},
+  {player:pnDice,pick1:nflBroncos,pick2:nflVikings,pick3:nflBears,pick4:nflEagles,pick5:nflBills,pick6:nflChargers,pick7:nflRaiders,pick8:nflFalcons,pick9:nflJets,pick10:nflPackers,pick11:nflSeahawks,pick12:nflCowboys,pick13:nflLions,pick14:nflPatriots,pick15:nflRedskins,pick16:nflNiners}
 ];
 
 var nfl2016Wk2Picks = [
