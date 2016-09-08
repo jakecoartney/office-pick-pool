@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  getCurrentUser();
   weeklyShedule();
+  getCurrentUser();
 });
 
 function getCurrentUser(){
@@ -22,7 +22,9 @@ function getCurrentUser(){
     }
   }
   else {
-    $("#loginList").append("<li><a href='#'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li><li><a href='#'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>");
+    //Not allowing people to sign up at this time, but once it is ready to accept multiple iterations add the below for sign-up
+    //<li><a href='#'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li>
+    $("#loginList").append("<li><a href='#'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>");
   }
 }
 
@@ -252,7 +254,7 @@ function weeklyManagementGames(week,weekNbr){
     }
     var gameNbr = i + 1;
     if (gameNbr < 10){gameNbr = "0" + gameNbr;}
-    $("#weekManagements").append("<div class='weekManagement'><div class='gameNumber col-xs-12 col-sm-2'>"+gameNbr+"</div><div id='manageAwayTeam' class='gameTeam1 col-xs-6 col-sm-3'>"+awayTeamName+"</div><div class='col-sm-2'>"+awayTeamScore+"</div><div id='manageHomeTeam' class='gameTeam1 col-xs-6 col-sm-3'>"+homeTeamName+"</div><div class='col-sm-2'>"+homeTeamScore+"</div></div>");
+    $("#weekManagements").append("<form name='gameInfo' action='' method='POST'><div class='weekManagement'><div class='gameNumber col-xs-12 col-sm-2'>"+gameNbr+"</div><div id='manageAwayTeam' class='gameTeam1 col-xs-6 col-sm-3'>"+awayTeamName+"</div><div class='col-sm-2'><input type='text' id='awayTeamScore' value='"+awayTeamScore+"'></input></div><div id='manageHomeTeam' class='gameTeam1 col-xs-6 col-sm-3'>"+homeTeamName+"</div><div class='col-sm-2'><input type='text' id='homeTeamScore' value='"+homeTeamScore+"'></input></div></div></form>");
   }
 }
 
