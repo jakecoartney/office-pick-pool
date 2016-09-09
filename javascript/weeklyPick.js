@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  weeklyShedule();
   getCurrentUser();
+  weeklyShedule();
 });
 
 function getCurrentUser(){
