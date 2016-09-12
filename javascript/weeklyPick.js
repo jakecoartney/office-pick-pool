@@ -3,8 +3,18 @@ $(document).ready(function(){
   weeklyShedule();
 });
 
+var lock = new Auth0Lock('nYYsLdgyF0gv8zqtz6Lo2Q86u2UY4j3d', 'office-pick-pool.auth0.com', {
+    auth: {
+      redirectUrl: '',
+      responseType: 'code',
+      params: {
+        scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
+      }
+    }
+  });
+
 function getCurrentUser(){
-  actPlayer = "jake";
+  actPlayer = "";
   if (actPlayer){
     var actUsername = "Not Logged In";
     var isAdmin = 0;
@@ -24,7 +34,7 @@ function getCurrentUser(){
   else {
     //Not allowing people to sign up at this time, but once it is ready to accept multiple iterations add the below for sign-up
     //<li><a href='#'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li>
-    $("#loginList").append("<li><a href='#'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>");
+    $("#loginList").append("<li><a href='#'onclick='lock.show();'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>");
   }
 }
 
