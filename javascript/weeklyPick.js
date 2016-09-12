@@ -14,7 +14,7 @@ var lock = new Auth0Lock('nYYsLdgyF0gv8zqtz6Lo2Q86u2UY4j3d', 'office-pick-pool.a
   });
 
 function getCurrentUser(){
-  actPlayer = "";
+  actPlayer = "jake";
   if (actPlayer){
     var actUsername = "Not Logged In";
     var isAdmin = 0;
