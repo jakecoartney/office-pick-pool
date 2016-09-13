@@ -25,10 +25,10 @@ function getCurrentUser(){
         break;
       }
     }
-    $("#naviList").append("<li id='weeklyPicks' class='nav-list'><a href='#' onclick='weeklyPicks();'>My Weekly Picks</a></li><li id='weeklyScores' class='nav-list'><a href='#' onclick='weeklyScores();'>Weekly Scores</a></li>");
+    $("#naviList").append("<li id='weeklyPicks' class='nav-list'><a href='#' onclick='weeklyPicks();' data-toggle='collapse' data-target='#myNavbar'>My Weekly Picks</a></li><li id='weeklyScores' class='nav-list'><a href='#' onclick='weeklyScores();' data-toggle='collapse' data-target='#myNavbar'>Weekly Scores</a></li>");
     $("#loginList").append("<li class='user'>"+actUsername+"</li>");
     if (isAdmin){
-      $("#naviList").append("<li id='weeklyManagement' class='nav-list'><a href='#' onclick='weeklyManagement();'>Management</a></li>");
+      $("#naviList").append("<li id='weeklyManagement' class='nav-list'><a href='#' onclick='weeklyManagement();' data-toggle='collapse' data-target='#myNavbar'>Management</a></li>");
     }
   }
   else {
@@ -233,12 +233,12 @@ function weeklyScoresGames(week,weekNbr){
       if  (pickName === gameWinner){
         count += 1;
         accuratePick = true;
-        $("#player"+i).append("<div class='goodPick col-xs-12 col-sm-2'>Pick "+(j+1)+":</br>"+pickName+"</div>");
+        $("#player"+i).append("<div class='goodPick col-xs-12 col-sm-2'>Pick "+(j+1)+":<span class='hidden-xs'></br></span>"+pickName+"</div>");
       }
       else if (week[j].winner && (pickName != gameWinner)){
-        $("#player"+i).append("<div class='badPick col-xs-12 col-sm-2'>Pick "+(j+1)+":</br>"+pickName+"</div>");
+        $("#player"+i).append("<div class='badPick col-xs-12 col-sm-2'>Pick "+(j+1)+":<span class='hidden-xs'></br></span>"+pickName+"</div>");
       }
-      else {$("#player"+i).append("<div class='mehPick col-xs-12 col-sm-2'>Pick "+(j+1)+":</br>"+pickName+"</div>");}
+      else {$("#player"+i).append("<div class='mehPick col-xs-12 col-sm-2'>Pick "+(j+1)+":<span class='hidden-xs'></br></span>"+pickName+"</div>");}
     }
     $("#"+players[i].code).append(" - "+count+" Correct");
     $("#weekScores").sortable();
