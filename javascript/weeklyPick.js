@@ -115,7 +115,7 @@ function weeklyScheduleGames(week,weekNbr){
     }
     var gameNbr = i + 1;
     if (gameNbr < 10){gameNbr = "0" + gameNbr;}
-    $("#weekGames").append("<div class='weekGame'><div class='gameNumber col-xs-12 col-sm-1'>"+gameNbr+"</div><div class='gameTeam1 col-xs-6 col-sm-5' style='background: "+awayTeamColor1+"; color: "+awayTeamColor2+"'>"+awayTeamName+" ("+awayTeamWins+"-"+awayTeamLosses+")<span class='gameScore1'>"+awayTeamScore+"</span></div><div class='gameNumber hidden-xs col-sm-1' style='background: linear-gradient(to right, "+awayTeamColor1+" , "+homeTeamColor1+")'> - </div><div class='gameTeam2 col-xs-6 col-sm-5' style='background: "+homeTeamColor1+"; color: "+homeTeamColor2+"'><span class='gameScore2'>"+homeTeamScore+"</span>("+homeTeamWins+"-"+homeTeamLosses+") "+homeTeamName+"</div></div>")
+    $("#weekGames").append("<div class='weekGame'><div class='gameNumber col-xs-12 col-sm-2'>Game "+gameNbr+"</div><div class='gameTeam1 col-xs-6 col-sm-5' style='background: "+awayTeamColor1+"; color: "+awayTeamColor2+"'>"+awayTeamName+" <span class='hidden-xs'>("+awayTeamWins+"-"+awayTeamLosses+")</span><span class='gameScore1'>"+awayTeamScore+"</span><span class='hidden-sm hidden-md hidden-lg hidden-xl'></br>("+awayTeamWins+"-"+awayTeamLosses+")</span></div><div class='gameTeam2 col-xs-6 col-sm-5' style='background: "+homeTeamColor1+"; color: "+homeTeamColor2+"'><span class='gameScore2'>"+homeTeamScore+"</span><span class='hidden-xs'>("+homeTeamWins+"-"+homeTeamLosses+")</span> "+homeTeamName+"<span class='hidden-sm hidden-md hidden-lg hidden-xl'></br>("+homeTeamWins+"-"+homeTeamLosses+")</span></div></div>")
   }
 }
 
@@ -173,7 +173,7 @@ function weeklyPicksGames(week,weekNbr){
     var weekPickNbr = "week" + gameNbr;
     var homePickNbr = "home" + i;
     var awayPickNbr = "away" + i;
-    $("#weekPicks").append("<div class='weekPick'><div id='"+weekPickNbr+"' class='gameNumber col-xs-12 col-sm-1'>"+gameNbr+"</div><a href='#' onclick='weekPickAway("+i+",nfl"+awayTeamName+","+weekNbr+"); return false;' id='gamePick1' class='weekTeamPick'><div class='"+awayPickNbr+" gameTeam1 col-xs-6 col-sm-5'>"+awayTeamName+" ("+awayTeamWins+"-"+awayTeamLosses+")</div></a><div class='hidden-xs col-sm-1'></div><a href='#' onclick='weekPickHome("+i+",nfl"+homeTeamName+","+weekNbr+"); return false;' id='gamePick2' class='weekTeamPick'><div class='"+homePickNbr+" gameTeam2 col-xs-6 col-sm-5'>("+homeTeamWins+"-"+homeTeamLosses+") "+homeTeamName+"</div></a></div>")
+    $("#weekPicks").append("<div class='weekPick'><div id='"+weekPickNbr+"' class='gameNumber col-xs-12 col-sm-2'>Game "+gameNbr+"</div><a href='#' onclick='weekPickAway("+i+",nfl"+awayTeamName+","+weekNbr+"); return false;' id='gamePick1' class='weekTeamPick'><div class='"+awayPickNbr+" gameTeam1 col-xs-6 col-sm-5'>"+awayTeamName+" ("+awayTeamWins+"-"+awayTeamLosses+")</div></a><a href='#' onclick='weekPickHome("+i+",nfl"+homeTeamName+","+weekNbr+"); return false;' id='gamePick2' class='weekTeamPick'><div class='"+homePickNbr+" gameTeam2 col-xs-6 col-sm-5'>("+homeTeamWins+"-"+homeTeamLosses+") "+homeTeamName+"</div></a></div>")
     if (gameDate <= todayDate){
       $("#"+weekPickNbr).append(" <i class='fa fa-lock' aria-hidden='true'></i>")
       content = $("#gamePick1").contents();
