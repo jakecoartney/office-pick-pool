@@ -233,12 +233,12 @@ function weeklyScoresGames(week,weekNbr){
       if  (pickName === gameWinner){
         count += 1;
         accuratePick = true;
-        $("#player"+i).append("<div class='goodPick col-xs-12 col-sm-2'>Pick "+(j+1)+": "+pickName+"</div>");
+        $("#player"+i).append("<div class='goodPick col-xs-12 col-sm-2'>Pick "+(j+1)+":</br>"+pickName+"</div>");
       }
       else if (week[j].winner && (pickName != gameWinner)){
-        $("#player"+i).append("<div class='badPick col-xs-12 col-sm-2'>Pick "+(j+1)+": "+pickName+"</div>");
+        $("#player"+i).append("<div class='badPick col-xs-12 col-sm-2'>Pick "+(j+1)+":</br>"+pickName+"</div>");
       }
-      else {$("#player"+i).append("<div class='mehPick col-xs-12 col-sm-2'>Pick "+(j+1)+": "+pickName+"</div>");}
+      else {$("#player"+i).append("<div class='mehPick col-xs-12 col-sm-2'>Pick "+(j+1)+":</br>"+pickName+"</div>");}
     }
     $("#"+players[i].code).append(" - "+count+" Correct");
     $("#weekScores").sortable();
