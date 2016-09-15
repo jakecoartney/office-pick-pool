@@ -43,14 +43,14 @@ function weeklyShedule(){
   switchMain("#weeklySchedule");
   $("#main").append("<h1 class='header hidden-xs'>Weekly Schedule</h1><div id='weekButtons' class='col-xs-6 col-md-1'></div><div class='title col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl'>Weekly Schedule</div><div id='weekGames' class='col-xs-12 col-md-11'></div>");
   weekCmb("weeklyScheduleGames");
-  weeklyScheduleGames(nfl2016Wk1,1);
+  weeklyScheduleGames(nfl2016Wk2,2);
 }
 
 function weeklyPicks(){
   switchMain("#weeklyPicks");
   $("#main").append("<h1 class='header hidden-xs'>Weekly Picks</h1><div id='weekButtons' class='col-xs-6 col-md-1'></div><div class='title col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl'>Weekly Picks</div><div id='weekPicks' class='col-xs-12 col-md-11'></div>");
   weekCmb("weeklyPicksGames");
-  weeklyPicksGames(nfl2016Wk1,1);
+  weeklyPicksGames(nfl2016Wk2,2);
 }
 
 function weeklyScores(){
@@ -59,14 +59,14 @@ function weeklyScores(){
   $("#main").append("<div id='overallScores' class='col-xs-12'></div><div id='weekButtons' class='col-xs-6 col-md-1'></div><div id='weekScores' class='col-xs-12 col-md-11'></div>");
   overallScores();
   weekCmb("weeklyScoresGames");
-  weeklyScoresGames(nfl2016Wk1,1);
+  weeklyScoresGames(nfl2016Wk2,2);
 }
 
 function weeklyManagement(){
   switchMain("#weeklyManagement");
   $("#main").append("<h1 class='header hidden-xs'>Weekly Management</h1><div id='weekButtons' class='col-xs-6 col-md-1'></div><div class='title col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl'>Weekly Management</div><div id='weekManagements' class='col-xs-12 col-md-11'></div>");
   weekCmb("weeklyManagementGames");
-  weeklyManagementGames(nfl2016Wk1,1);
+  weeklyManagementGames(nfl2016Wk2,2);
 }
 
 //Reset main content area and navigation selection hightlight
