@@ -6,6 +6,7 @@ var pnOlsen = {email:"roberto@buildingi.com",name:"Robert Olsen",code:"olsen",pa
 var pnLemoine = {email:"robertl@buildingi.com",name:"Robert LeMoine",code:"lemoine",password:"null",admin:0};;
 var pnRyan = {email:"ryanf@buildingi.com",name:"Ryan Fristoe",code:"ryan",password:"roadblock",admin:0};
 var pnDice = {email:"diceroll@buildingi.com",name:"Random Dice Roll",code:"dice",password:"random",admin:0};
+var pnWolf = {email:"dave.wolf@buildingi.com",name:"Dave Wolf",code:"wolf",admin:0};
 
 //Array of players
-var players = [pnDamen,pnJake,pnKevin,pnOlsen,pnLemoine,pnRyan,pnDice];
+var players = [pnDamen,pnJake,pnKevin,pnOlsen,pnLemoine,pnRyan,pnDice,pnWolf];
